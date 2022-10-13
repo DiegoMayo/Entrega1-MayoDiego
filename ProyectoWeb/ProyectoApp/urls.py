@@ -15,10 +15,14 @@ Including another URLconf
 """
 from django.urls import path
 
+from ProyectoApp import views
+
 from ProyectoApp.views import mostrar_tienda, mostrar_juego, mostrar_cliente
 
 urlpatterns = [
+    
     path("tienda/", mostrar_tienda),
     path("juego/", mostrar_juego),
-    path("cliente/", mostrar_cliente)
+    path("cliente/", mostrar_cliente),
+    
 ]
