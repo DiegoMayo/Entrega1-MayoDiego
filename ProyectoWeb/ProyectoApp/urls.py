@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.urls import path
 
-from ProyectoApp.views import mostrar_inicio
+from ProyectoApp.views import mostrar_tienda, mostrar_juego, mostrar_cliente
 
 urlpatterns = [
-    path("inicio/", mostrar_inicio),
+    path("tienda/", mostrar_tienda),
+    path("juego/", mostrar_juego),
+    path("cliente/", mostrar_cliente)
 ]
